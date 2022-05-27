@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/sinulogbg2"
+    tools:context=".controllers.NewsShowActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_marginBottom="10dp"
+            >
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/detailImg"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/logo"
+                            android:layout_marginBottom="10dp"
+                            android:layout_gravity="center"/>
+
+                        <ImageView
+                            android:id="@+id/detailImg2"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/logo" />
+
+                        <ImageView
+                            android:id="@+id/detailImg3"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/logo"
+                            android:layout_marginBottom="10dp"
+                            android:layout_gravity="center"/>
+                        <ImageView
+                            android:id="@+id/detailImg4"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/logo"
+                            android:layout_marginBottom="10dp"
+                            android:layout_gravity="center"/>
+
+                    </ScrollView>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/lightBlue"
+                    android:text="--------------------------------------------------------"
+                    android:textSize="16sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/detailTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="FOOD AREA NAME"
+                    android:textColor="@color/blue"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/detailLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/lightBlue"
+                    android:text="LOCATION"
+                    android:textSize="16sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/detailDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blue"
+                    android:text="MAY 18, 2022"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/detailContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/lightBlue"
+                    android:text="09322222222"
+                    android:gravity="center"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/detailDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/news_sample_text"
+                    android:textColor="@color/blue"
+                    android:padding="20dp"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/lightBlue"
+                    android:text="--------------------------------------------------------"
+                    android:textSize="16sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/txt3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/lightBlue"
+                    android:text="Do you want to reserve or inquire?"
+                    android:textSize="16sp"
+                    android:gravity="center"/>
+
+                <Button
+                    android:id="@+id/contactFoodBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@drawable/custom_btn_rounded"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/blue"
+                    android:layout_gravity="center"
+                    android:text="CONTACT"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+</LinearLayout>
